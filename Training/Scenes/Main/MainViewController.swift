@@ -18,6 +18,7 @@ final class MainViewController: UIViewController {
         didSet {
             tableView.register(R.nib.eventTableViewCell)
             tableView.dataSource = dataSource
+            tableView.delegate = self
             tableView.tableHeaderView = UIView(frame: .zero)
             tableView.tableFooterView = UIView(frame: .zero)
         }
@@ -69,6 +70,15 @@ extension MainViewController {
         snapshot.appendSections([Const.sectionIdentifier])
         snapshot.appendItems(events, toSection: Const.sectionIdentifier)
         dataSource.apply(snapshot, animatingDifferences: false)
+    }
+}
+
+// MARK: - UITableViewDelegate
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        // TODO: Implement cell tap event
     }
 }
 
