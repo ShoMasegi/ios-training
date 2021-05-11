@@ -10,5 +10,10 @@ final class EventTableViewCell: UITableViewCell {
 
     @IBOutlet private var label: UILabel!
     @IBOutlet private var repositoryLabel: UILabel!
-    @IBOutlet private var iconImageView: UIImageView!
+    @IBOutlet private var iconImageView: UIImageView! {
+        didSet {
+            iconImageView.clipsToBounds = true
+            iconImageView.layer.cornerRadius = iconImageView.frame.height / 2
+        }
+    }
 }
