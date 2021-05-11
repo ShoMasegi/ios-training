@@ -37,6 +37,11 @@ GitHubクライアントアプリを開発していただきます。
 
 ### 課題
 1. [イベント一覧画面のセルをデザイン通りに修正する](./Document/Session_1.md)
+2. [レポジトリ画面の作成･遷移](./Document/Session_2.md)
+3. [レポジトリ画面の作り込み](./Document/Session_3.md)
+4. [ユーザー画面の実装 (作成･遷移･作り込み)](./Document/Session_4.md)
+5. [`Combine`を使ってリファクタリング](./Document/Session_5.md)
+6. [~~ViewModelを作成してリファクタリング~~](./Document/Session_6.md)
 
 ### セットアップ
 
