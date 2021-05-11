@@ -9,37 +9,64 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="Training" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventTableViewCell" rowHeight="73" id="KGk-i7-Jjw" customClass="EventTableViewCell" customModule="Training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOh-MB-ou1">
-                        <rect key="frame" x="16" y="12" width="288" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="76" y="14" width="228" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" name="OnSurface"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LrV-7N-G23">
+                        <rect key="frame" x="20" y="16.5" width="40" height="40"/>
+                        <color key="backgroundColor" name="AccentVariant"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="BkQ-qa-68n"/>
+                            <constraint firstAttribute="width" constant="40" id="FOl-5p-LgM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbI-cQ-ZG7">
+                        <rect key="frame" x="76" y="37.5" width="228" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="OnSurfaceSecondary"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <color key="backgroundColor" name="Surface"/>
                 <constraints>
-                    <constraint firstItem="mOh-MB-ou1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="ZvZ-2d-i2K"/>
+                    <constraint firstItem="AbI-cQ-ZG7" firstAttribute="leading" secondItem="mOh-MB-ou1" secondAttribute="leading" id="0Tg-Qu-hoY"/>
+                    <constraint firstItem="mOh-MB-ou1" firstAttribute="leading" secondItem="LrV-7N-G23" secondAttribute="trailing" constant="16" id="2B7-Yx-Ma0"/>
+                    <constraint firstAttribute="trailing" secondItem="AbI-cQ-ZG7" secondAttribute="trailing" constant="16" id="3Sa-yB-6t3"/>
+                    <constraint firstItem="AbI-cQ-ZG7" firstAttribute="top" secondItem="mOh-MB-ou1" secondAttribute="bottom" constant="4" id="4i4-p7-vvu"/>
+                    <constraint firstItem="LrV-7N-G23" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="HGQ-UF-eej"/>
+                    <constraint firstItem="LrV-7N-G23" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LT3-I5-O8q"/>
+                    <constraint firstAttribute="bottom" secondItem="AbI-cQ-ZG7" secondAttribute="bottom" constant="14" id="QS5-Z6-KnL"/>
+                    <constraint firstItem="mOh-MB-ou1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="ZvZ-2d-i2K"/>
                     <constraint firstAttribute="trailing" secondItem="mOh-MB-ou1" secondAttribute="trailing" constant="16" id="eFZ-uw-iRp"/>
-                    <constraint firstAttribute="bottom" secondItem="mOh-MB-ou1" secondAttribute="bottom" constant="12" id="kPb-7b-3mg"/>
-                    <constraint firstItem="mOh-MB-ou1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="slc-uv-zCu"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="iconImageView" destination="LrV-7N-G23" id="d9l-wu-04N"/>
                 <outlet property="label" destination="mOh-MB-ou1" id="CWQ-fC-vsE"/>
+                <outlet property="repositoryLabel" destination="AbI-cQ-ZG7" id="YNd-zs-UqR"/>
             </connections>
-            <point key="canvasLocation" x="110.14492753623189" y="35.15625"/>
+            <point key="canvasLocation" x="111.59420289855073" y="38.504464285714285"/>
         </tableViewCell>
     </objects>
     <resources>
+        <namedColor name="AccentVariant">
+            <color red="0.45882352941176469" green="0.45882352941176469" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="OnSurface">
             <color red="0.1289999932050705" green="0.1289999932050705" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnSurfaceSecondary">
+            <color red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Surface">
             <color red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
