@@ -21,6 +21,8 @@
 		A72D04102645876D00DA791D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72D040F2645876D00DA791D /* LaunchScreen.storyboard */; };
 		A72D04122645878500DA791D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72D04112645878500DA791D /* Main.storyboard */; };
 		A72E2A6A264B037F0051C781 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = A72E2A69264B037F0051C781 /* Nuke */; };
+		A72E2A6D264B06330051C781 /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72E2A6C264B06330051C781 /* RepositoryViewController.swift */; };
+		A72E2A6F264B06450051C781 /* Repository.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72E2A6E264B06450051C781 /* Repository.storyboard */; };
 		A764F0252648D79B00EEE731 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A764F0242648D79B00EEE731 /* Alamofire */; };
 		A764F0272648E0DD00EEE731 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F0262648E0DD00EEE731 /* Event.swift */; };
 		A764F0292648E14000EEE731 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F0282648E14000EEE731 /* User.swift */; };
@@ -74,6 +76,8 @@
 		A72D0403264582EB00DA791D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72D040F2645876D00DA791D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72D04112645878500DA791D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A72E2A6C264B06330051C781 /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
+		A72E2A6E264B06450051C781 /* Repository.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Repository.storyboard; sourceTree = "<group>"; };
 		A764F0262648E0DD00EEE731 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A764F0282648E14000EEE731 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A764F02D2648E28800EEE731 /* RepositorySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySummary.swift; sourceTree = "<group>"; };
@@ -199,8 +203,18 @@
 			isa = PBXGroup;
 			children = (
 				A764F01F2648D65800EEE731 /* Main */,
+				A72E2A6B264B05F90051C781 /* Repository */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A72E2A6B264B05F90051C781 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A72E2A6C264B06330051C781 /* RepositoryViewController.swift */,
+				A72E2A6E264B06450051C781 /* Repository.storyboard */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		A764F01F2648D65800EEE731 /* Main */ = {
@@ -411,6 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A764F0392648F9D800EEE731 /* EventTableViewCell.xib in Resources */,
+				A72E2A6F264B06450051C781 /* Repository.storyboard in Resources */,
 				A72D04122645878500DA791D /* Main.storyboard in Resources */,
 				A72D04102645876D00DA791D /* LaunchScreen.storyboard in Resources */,
 				A72D03E9264582EA00DA791D /* Assets.xcassets in Resources */,
@@ -572,6 +587,7 @@
 				A72D03E2264582E600DA791D /* SceneDelegate.swift in Sources */,
 				A7B548B02645BA4700176FE0 /* R.generated.swift in Sources */,
 				A764F0272648E0DD00EEE731 /* Event.swift in Sources */,
+				A72E2A6D264B06330051C781 /* RepositoryViewController.swift in Sources */,
 				6FD1315EF996C0D92C68E0A0 /* NetworkLogger.swift in Sources */,
 				A764F0352648F01800EEE731 /* GetEventsRequest.swift in Sources */,
 				6FD132065B0D8C35CD593AB0 /* GetEventsUseCase.swift in Sources */,
