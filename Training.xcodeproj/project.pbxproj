@@ -20,6 +20,7 @@
 		A72D0402264582EB00DA791D /* TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72D0401264582EB00DA791D /* TrainingUITests.swift */; };
 		A72D04102645876D00DA791D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72D040F2645876D00DA791D /* LaunchScreen.storyboard */; };
 		A72D04122645878500DA791D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72D04112645878500DA791D /* Main.storyboard */; };
+		A72E2A6A264B037F0051C781 /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = A72E2A69264B037F0051C781 /* Nuke */; };
 		A764F0252648D79B00EEE731 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A764F0242648D79B00EEE731 /* Alamofire */; };
 		A764F0272648E0DD00EEE731 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F0262648E0DD00EEE731 /* Event.swift */; };
 		A764F0292648E14000EEE731 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F0282648E14000EEE731 /* User.swift */; };
@@ -91,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72E2A6A264B037F0051C781 /* Nuke in Frameworks */,
 				0B89F13F34F75F434BF51D3D /* Pods_Training.framework in Frameworks */,
 				A764F0252648D79B00EEE731 /* Alamofire in Frameworks */,
 			);
@@ -312,6 +314,7 @@
 			name = Training;
 			packageProductDependencies = (
 				A764F0242648D79B00EEE731 /* Alamofire */,
+				A72E2A69264B037F0051C781 /* Nuke */,
 			);
 			productName = Training;
 			productReference = A72D03DC264582E600DA791D /* Training.app */;
@@ -389,6 +392,7 @@
 			mainGroup = A72D03D3264582E600DA791D;
 			packageReferences = (
 				A764F0232648D79B00EEE731 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A72E2A68264B037F0051C781 /* XCRemoteSwiftPackageReference "Nuke" */,
 			);
 			productRefGroup = A72D03DD264582E600DA791D /* Products */;
 			projectDirPath = "";
@@ -888,6 +892,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A72E2A68264B037F0051C781 /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.6.0;
+			};
+		};
 		A764F0232648D79B00EEE731 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
@@ -899,6 +911,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A72E2A69264B037F0051C781 /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A72E2A68264B037F0051C781 /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
 		A764F0242648D79B00EEE731 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A764F0232648D79B00EEE731 /* XCRemoteSwiftPackageReference "Alamofire" */;
