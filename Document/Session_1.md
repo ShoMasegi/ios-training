@@ -17,6 +17,6 @@
 
 ## 手順
 
-1. 各Viewをデザイン通りに設置する
-2. 画像読み込みライブラリである [Nuke](https://github.com/kean/Nuke) を Swift Package Manager でインストール
-3. アイコンを表示
+1. 各Viewをデザイン通りに設置する。
+2. 画像読み込みライブラリである [Nuke](https://github.com/kean/Nuke) を Swift Package Manager でインストールする。
+3. アイコンを表示する。
