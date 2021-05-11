@@ -34,7 +34,9 @@ GitHubクライアントアプリを開発していただきます。
 2. [こちら](#セットアップ)を参考にセットアップを行う。
 3. [Training.xcworkspace](./Training.xcworkspace)をXcodeで開いて開発を進める。
 
-🚧 Step毎に課題を用意する予定です。
+
+### 課題
+1. [イベント一覧画面のセルをデザイン通りに修正する](./Document/Session_1.md)
 
 ### セットアップ
 
