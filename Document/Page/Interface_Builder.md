@@ -13,7 +13,7 @@ Xcodeはとても強力なIDEで、様々な機能が沢山あります。<br>
 
 <img src="../Image/Add_View.gif" width="800"/>
 
-`cmd`+`L` でViewの一覧パネルが表示されます。<br>
+`cmd`+`shift`+L` でViewの一覧パネルが表示されます。<br>
 表示されているViewをドラッグ&ドロップ、または`Enter`でViewを追加出来ます。
 
 ### Constraintsの追加方法
