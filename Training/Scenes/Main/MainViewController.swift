@@ -78,7 +78,8 @@ extension MainViewController {
 extension MainViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let viewController = RepositoryViewController.instantiate()
+        let event = dataSource.snapshot().itemIdentifiers(inSection: Const.sectionIdentifier)[indexPath.row]
+        let viewController = RepositoryViewController.instantiate(event: event)
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

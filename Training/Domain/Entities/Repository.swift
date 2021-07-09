@@ -3,6 +3,8 @@ import Foundation
 struct Repository: Decodable {
     let id: Int64
     let name: String
+    let fullName: String
+    let description: String?
     let owner: Owner
     let `private`: Bool
     let updatedAt: Date
@@ -27,6 +29,8 @@ struct Repository: Decodable {
     enum CodingKeys: String, CodingKey {
         case id
         case name
+        case fullName = "full_name"
+        case description = "description"
         case owner
         case `private`
         case updatedAt = "updated_at"
