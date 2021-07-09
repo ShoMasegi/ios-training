@@ -6,6 +6,11 @@ final class Network {
     private enum Const {
         static let acceptableStatusCode = 200 ..< 300
         static let acceptableContentType = ["application/json"]
+        static let decoder: JSONDecoder = {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            return decoder
+        }()
     }
 
     @discardableResult
@@ -13,7 +18,7 @@ final class Network {
         _ request: Request,
         completion: @escaping (Result<Response, Error>) -> Void
     ) -> DataRequest where Request: BaseRequest, Response == Request.Response {
-        afRequest(request).responseDecodable(of: Response.self) { response in
+        afRequest(request).responseDecodable(of: Response.self, decoder: Const.decoder) { response in
             switch response.result {
             case .success(let decoded): completion(.success(decoded))
             case .failure(let error): completion(.failure(error))
@@ -23,7 +28,7 @@ final class Network {
 
     static func request<Request, Response>(_ request: Request) -> AnyPublisher<Response, Error>
         where Request: BaseRequest, Response == Request.Response {
-        DataResponsePublisher<Response>(afRequest(request), queue: .main, serializer: DecodableResponseSerializer())
+        DataResponsePublisher<Response>(afRequest(request), queue: .main, serializer: DecodableResponseSerializer(decoder: Const.decoder))
             .tryMap { response in
                 switch response.result {
                 case .success(let decoded): return decoded
