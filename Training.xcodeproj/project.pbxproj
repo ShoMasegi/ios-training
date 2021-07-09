@@ -39,6 +39,8 @@
 		A7B548B02645BA4700176FE0 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B548AF2645BA4700176FE0 /* R.generated.swift */; };
 		A7D24C63269815C50085F82F /* RepositoryCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D24C62269815C50085F82F /* RepositoryCountView.swift */; };
 		A7D24C65269815E00085F82F /* RepositoryCountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D24C64269815E00085F82F /* RepositoryCountView.xib */; };
+		A7D8D7A5269828500093680D /* RepositoryInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8D7A4269828500093680D /* RepositoryInfoView.swift */; };
+		A7D8D7A72698285E0093680D /* RepositoryInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7D8D7A62698285E0093680D /* RepositoryInfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		A7B548AF2645BA4700176FE0 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A7D24C62269815C50085F82F /* RepositoryCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCountView.swift; sourceTree = "<group>"; };
 		A7D24C64269815E00085F82F /* RepositoryCountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCountView.xib; sourceTree = "<group>"; };
+		A7D8D7A4269828500093680D /* RepositoryInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryInfoView.swift; sourceTree = "<group>"; };
+		A7D8D7A62698285E0093680D /* RepositoryInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryInfoView.xib; sourceTree = "<group>"; };
 		C94CCBDFED768A11714B12D7 /* Pods-Training-TrainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Training-TrainingUITests.debug.xcconfig"; path = "Target Support Files/Pods-Training-TrainingUITests/Pods-Training-TrainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFE0A3B1ACF5DD2D82584E45 /* Pods_TrainingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrainingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -337,6 +341,8 @@
 			children = (
 				A7D24C62269815C50085F82F /* RepositoryCountView.swift */,
 				A7D24C64269815E00085F82F /* RepositoryCountView.xib */,
+				A7D8D7A4269828500093680D /* RepositoryInfoView.swift */,
+				A7D8D7A62698285E0093680D /* RepositoryInfoView.xib */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 				A764F0392648F9D800EEE731 /* EventTableViewCell.xib in Resources */,
 				A72E2A6F264B06450051C781 /* Repository.storyboard in Resources */,
 				A72D04122645878500DA791D /* Main.storyboard in Resources */,
+				A7D8D7A72698285E0093680D /* RepositoryInfoView.xib in Resources */,
 				A72D04102645876D00DA791D /* LaunchScreen.storyboard in Resources */,
 				A7D24C65269815E00085F82F /* RepositoryCountView.xib in Resources */,
 				A72D03E9264582EA00DA791D /* Assets.xcassets in Resources */,
@@ -622,6 +629,7 @@
 				A72D03E2264582E600DA791D /* SceneDelegate.swift in Sources */,
 				A7D24C63269815C50085F82F /* RepositoryCountView.swift in Sources */,
 				A7B548B02645BA4700176FE0 /* R.generated.swift in Sources */,
+				A7D8D7A5269828500093680D /* RepositoryInfoView.swift in Sources */,
 				A764F0272648E0DD00EEE731 /* Event.swift in Sources */,
 				A72E2A6D264B06330051C781 /* RepositoryViewController.swift in Sources */,
 				6FD1315EF996C0D92C68E0A0 /* NetworkLogger.swift in Sources */,
