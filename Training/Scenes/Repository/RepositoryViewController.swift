@@ -51,6 +51,7 @@ final class RepositoryViewController: UIViewController {
 extension RepositoryViewController {
     private func setupSubviews() {
         eventView.setEvent(event)
+        eventView.setDelegate(self)
         starCountView.setCount(0, type: .star)
         watchCountView.setCount(0, type: .watch)
         forkCountView.setCount(0, type: .fork)
@@ -84,6 +85,10 @@ extension RepositoryViewController {
                 }
             }
     }
+}
+
+extension RepositoryViewController: RepositoryEventViewDelegate {
+    func repositoryEventView(_ view: RepositoryEventView, didDetailButtonTapped: UIButton) {}
 }
 
 // MARK: - Instantiate

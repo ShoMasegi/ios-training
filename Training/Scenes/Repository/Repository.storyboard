@@ -64,6 +64,9 @@
                                         <state key="normal" title="Detail">
                                             <color key="titleColor" name="AccentColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="detailButtonTouchUpInside:" destination="mek-cg-C2W" eventType="touchUpInside" id="jpU-7P-wdD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Background"/>
