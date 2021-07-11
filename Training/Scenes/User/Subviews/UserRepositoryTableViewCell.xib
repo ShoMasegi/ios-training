@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserRepositoryTableViewCell" id="KGk-i7-Jjw" customClass="UserRepositoryTableViewCell" customModule="Training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="94"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="5fn-wq-lgg">
+                        <rect key="frame" x="20" y="16" width="280" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository-name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sae-hx-bDa">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" name="OnSurface"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="repository description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80x-Sd-TYV">
+                                <rect key="frame" x="0.0" y="25" width="280" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" name="OnSurfaceSecondary"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2U-P5-LYZ">
+                                <rect key="frame" x="0.0" y="46" width="280" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarOutlined" translatesAutoresizingMaskIntoConstraints="NO" id="euU-13-h9z">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <color key="tintColor" name="OnSurface"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="Lla-GE-uja"/>
+                                            <constraint firstAttribute="width" constant="20" id="sV4-92-GHi"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEB-vR-mDp">
+                                        <rect key="frame" x="26" y="1.5" width="226" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" name="OnSurfaceSecondary"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hEB-vR-mDp" firstAttribute="leading" secondItem="euU-13-h9z" secondAttribute="trailing" constant="6" id="9le-wu-IdH"/>
+                                    <constraint firstItem="hEB-vR-mDp" firstAttribute="centerY" secondItem="euU-13-h9z" secondAttribute="centerY" id="R80-Pd-Vgk"/>
+                                    <constraint firstItem="euU-13-h9z" firstAttribute="top" secondItem="K2U-P5-LYZ" secondAttribute="top" id="RT4-z2-lwS"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="hEB-vR-mDp" secondAttribute="trailing" constant="20" id="Rfh-ie-bag"/>
+                                    <constraint firstItem="euU-13-h9z" firstAttribute="leading" secondItem="K2U-P5-LYZ" secondAttribute="leading" id="gIR-F4-2ib"/>
+                                    <constraint firstAttribute="bottom" secondItem="euU-13-h9z" secondAttribute="bottom" id="ylH-P7-8jV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="5fn-wq-lgg" secondAttribute="trailing" constant="20" id="L0v-L5-WlT"/>
+                    <constraint firstItem="5fn-wq-lgg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="okG-nD-0Pv"/>
+                    <constraint firstAttribute="bottom" secondItem="5fn-wq-lgg" secondAttribute="bottom" constant="12" id="sxH-wE-7v9"/>
+                    <constraint firstItem="5fn-wq-lgg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vw6-Pl-WXg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" name="Background"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="80x-Sd-TYV" id="9VY-5x-jTW"/>
+                <outlet property="nameLabel" destination="Sae-hx-bDa" id="zQB-AK-6bO"/>
+                <outlet property="starCountLabel" destination="hEB-vR-mDp" id="EKy-y6-3s5"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="StarOutlined" width="48" height="48"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnSurface">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnSurfaceSecondary">
+            <color red="0.61960784313725492" green="0.61960784313725492" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

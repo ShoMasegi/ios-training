@@ -88,7 +88,10 @@ extension RepositoryViewController {
 }
 
 extension RepositoryViewController: RepositoryEventViewDelegate {
-    func repositoryEventView(_ view: RepositoryEventView, didDetailButtonTapped: UIButton) {}
+    func repositoryEventView(_ view: RepositoryEventView, didDetailButtonTapped: UIButton) {
+        let vc = UserViewController.instantiate(username: event.actor.login)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 // MARK: - Instantiate

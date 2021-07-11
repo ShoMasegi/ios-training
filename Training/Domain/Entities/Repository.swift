@@ -1,6 +1,6 @@
 import Foundation
 
-struct Repository: Decodable {
+struct Repository: Decodable, Hashable {
     let id: Int64
     let name: String
     let fullName: String
@@ -14,7 +14,7 @@ struct Repository: Decodable {
     let forksCount: Int
     let language: String?
 
-    struct Owner: Decodable {
+    struct Owner: Decodable, Hashable {
         let id: Int64
         let login: String
         let avatarUrl: URL

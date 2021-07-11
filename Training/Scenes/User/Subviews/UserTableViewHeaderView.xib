@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserTableViewHeaderView" customModule="Training" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGG-R5-nxV">
+                    <rect key="frame" x="0.0" y="14" width="375" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Repository" translatesAutoresizingMaskIntoConstraints="NO" id="1p1-YX-5ih">
+                            <rect key="frame" x="20" y="8" width="20" height="20"/>
+                            <color key="tintColor" name="OnSurface"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Vsp-eB-VWI"/>
+                                <constraint firstAttribute="width" constant="20" id="x80-b1-TgS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repository" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t26-yR-7dc">
+                            <rect key="frame" x="52" y="8.5" width="303" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" name="OnSurface"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gic-M7-lPO">
+                            <rect key="frame" x="0.0" y="35.5" width="375" height="0.5"/>
+                            <color key="backgroundColor" name="ControlHilight"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="fbk-pO-pVm"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zy2-gm-Nwt">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                            <color key="backgroundColor" name="ControlHilight"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="S6Z-M1-gLg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="Background"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="t26-yR-7dc" secondAttribute="trailing" constant="20" id="14c-Ia-GZA"/>
+                        <constraint firstAttribute="bottom" secondItem="1p1-YX-5ih" secondAttribute="bottom" constant="8" id="AJW-3r-PsU"/>
+                        <constraint firstItem="zy2-gm-Nwt" firstAttribute="top" secondItem="JGG-R5-nxV" secondAttribute="top" id="FUU-f1-H1K"/>
+                        <constraint firstItem="zy2-gm-Nwt" firstAttribute="leading" secondItem="JGG-R5-nxV" secondAttribute="leading" id="JgB-BI-5uu"/>
+                        <constraint firstAttribute="height" constant="36" id="L4I-oB-eTP"/>
+                        <constraint firstItem="1p1-YX-5ih" firstAttribute="top" secondItem="JGG-R5-nxV" secondAttribute="top" constant="8" id="MhD-T3-xBZ"/>
+                        <constraint firstItem="1p1-YX-5ih" firstAttribute="leading" secondItem="JGG-R5-nxV" secondAttribute="leading" constant="20" id="S6P-yp-sAe"/>
+                        <constraint firstAttribute="trailing" secondItem="gic-M7-lPO" secondAttribute="trailing" id="fM1-ZB-NDS"/>
+                        <constraint firstAttribute="trailing" secondItem="zy2-gm-Nwt" secondAttribute="trailing" id="iYT-nC-ULK"/>
+                        <constraint firstItem="t26-yR-7dc" firstAttribute="leading" secondItem="1p1-YX-5ih" secondAttribute="trailing" constant="12" id="ivU-hx-FCW"/>
+                        <constraint firstAttribute="bottom" secondItem="gic-M7-lPO" secondAttribute="bottom" id="kXK-qj-FxV"/>
+                        <constraint firstItem="gic-M7-lPO" firstAttribute="leading" secondItem="JGG-R5-nxV" secondAttribute="leading" id="n3e-aQ-KJj"/>
+                        <constraint firstItem="t26-yR-7dc" firstAttribute="centerY" secondItem="1p1-YX-5ih" secondAttribute="centerY" id="oLL-KH-Ii5"/>
+                        <constraint firstAttribute="bottom" secondItem="1p1-YX-5ih" secondAttribute="bottom" constant="8" id="snb-5D-sXn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="JGG-R5-nxV" secondAttribute="bottom" id="C7j-LZ-z1Q"/>
+                <constraint firstItem="JGG-R5-nxV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EAd-Lj-wMw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="JGG-R5-nxV" secondAttribute="trailing" id="VOm-k2-wP9"/>
+                <constraint firstItem="JGG-R5-nxV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="14" id="cZY-xK-i48"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-236" y="1395.2023988005999"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Repository" width="48" height="48"/>
+        <namedColor name="Background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ControlHilight">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OnSurface">
+            <color red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
