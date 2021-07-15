@@ -20,6 +20,7 @@
 		A72D0402264582EB00DA791D /* TrainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72D0401264582EB00DA791D /* TrainingUITests.swift */; };
 		A72D04102645876D00DA791D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72D040F2645876D00DA791D /* LaunchScreen.storyboard */; };
 		A72D04122645878500DA791D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72D04112645878500DA791D /* Main.storyboard */; };
+		A754EFD7269FAB9D00E1CEFF /* ViewModelCore in Frameworks */ = {isa = PBXBuildFile; productRef = A754EFD6269FAB9D00E1CEFF /* ViewModelCore */; };
 		A764F0252648D79B00EEE731 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A764F0242648D79B00EEE731 /* Alamofire */; };
 		A764F0272648E0DD00EEE731 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F0262648E0DD00EEE731 /* Event.swift */; };
 		A764F0292648E14000EEE731 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A764F0282648E14000EEE731 /* User.swift */; };
@@ -73,6 +74,7 @@
 		A72D0403264582EB00DA791D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72D040F2645876D00DA791D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72D04112645878500DA791D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A754EFD5269FAB8000E1CEFF /* ViewModelCore */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ViewModelCore; sourceTree = "<group>"; };
 		A764F0262648E0DD00EEE731 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		A764F0282648E14000EEE731 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A764F02D2648E28800EEE731 /* RepositorySummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorySummary.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B89F13F34F75F434BF51D3D /* Pods_Training.framework in Frameworks */,
+				A754EFD7269FAB9D00E1CEFF /* ViewModelCore in Frameworks */,
 				A764F0252648D79B00EEE731 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +147,7 @@
 				A72D03DE264582E600DA791D /* Training */,
 				A72D03F5264582EA00DA791D /* TrainingTests */,
 				A72D0400264582EB00DA791D /* TrainingUITests */,
+				A754EFD3269FAAD800E1CEFF /* Packages */,
 				A72D03DD264582E600DA791D /* Products */,
 				333672590240EE1F5A2795C8 /* Pods */,
 				83BB283E71515B7C5DCEE2FD /* Frameworks */,
@@ -199,6 +203,14 @@
 				A764F01F2648D65800EEE731 /* Main */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A754EFD3269FAAD800E1CEFF /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A754EFD5269FAB8000E1CEFF /* ViewModelCore */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 		A764F01F2648D65800EEE731 /* Main */ = {
@@ -312,6 +324,7 @@
 			name = Training;
 			packageProductDependencies = (
 				A764F0242648D79B00EEE731 /* Alamofire */,
+				A754EFD6269FAB9D00E1CEFF /* ViewModelCore */,
 			);
 			productName = Training;
 			productReference = A72D03DC264582E600DA791D /* Training.app */;
@@ -899,6 +912,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A754EFD6269FAB9D00E1CEFF /* ViewModelCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ViewModelCore;
+		};
 		A764F0242648D79B00EEE731 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A764F0232648D79B00EEE731 /* XCRemoteSwiftPackageReference "Alamofire" */;
